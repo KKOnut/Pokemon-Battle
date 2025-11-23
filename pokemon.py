@@ -15,15 +15,11 @@ class Pokemon:
         self.defense = defense
         self.moves = moves
         
-    def attack(self, enemy, move):
-        enemy.health -= round(move.value * 0.01 * self.damage)
+    def attack(self,
+               enemy,
+               move
+               ) -> int:
+        atk_val = round(move.value * 0.01 * self.damage)
+        enemy.health -= atk_val
         enemy.health = max(enemy.health, 0)
-
-    def calculate_damage():
-        pass
-
-
-    def run(self, enemy):
-        if self.hp > enemy.hp:
-            return True
-        
+        return atk_val
