@@ -54,7 +54,6 @@ Pokemon(name="Rowlet",
                  moves=pokemon_moveset[2])
 ]
 
-
 #list_move_one[x].name
 # x move selection; 0-3
 

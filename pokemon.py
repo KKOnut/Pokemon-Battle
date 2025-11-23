@@ -14,7 +14,7 @@ class Pokemon:
         self.max_health = health
         self.defense = defense
         self.moves = moves
-        
+
     def attack(self,
                enemy,
                move
